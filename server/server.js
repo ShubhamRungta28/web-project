@@ -17,8 +17,8 @@ app.get("/",(req,res)=>{
 	return res.status(200).sendFile(frontEndFile);
 })
 
-app.post("/index.html",(req,res)=>{
-    const frontEndFile = path.join(__dirname,"..","/blog-html-css/index.html");
+app.post("/landing.html",(req,res)=>{
+    const frontEndFile = path.join(__dirname,"..","/blog-html-css/landing.html");
 	return res.status(200).sendFile(frontEndFile);
 })
 
@@ -29,6 +29,52 @@ app.get("/login.html",(req,res)=>{
 
 app.get("/register.html",(req,res)=>{
     const frontEndFile = path.join(__dirname,"..","/blog-html-css/register.html");
+	return res.status(200).sendFile(frontEndFile);
+})
+
+app.get("/blog-html-css/admin/posts/index.html",(req,res)=>{
+    const frontEndFile = path.join(__dirname,"..","/blog-html-css/admin/posts/index.html");
+	return res.status(200).sendFile(frontEndFile);
+})
+
+app.get("/blog-html-css/admin/posts/create.html",(req,res)=>{
+    const frontEndFile = path.join(__dirname,"..","/blog-html-css/admin/posts/create.html");
+	return res.status(200).sendFile(frontEndFile);
+})
+
+app.get("/blog-html-css/admin/users/index.html",(req,res)=>{
+    const frontEndFile = path.join(__dirname,"..","/blog-html-css/admin/users/index.html");
+	return res.status(200).sendFile(frontEndFile);
+})
+
+app.get("/blog-html-css/admin/users/create.html",(req,res)=>{
+    const frontEndFile = path.join(__dirname,"..","/blog-html-css/admin/users/create.html");
+	return res.status(200).sendFile(frontEndFile);
+})
+
+app.get("/blog-html-css/admin/topics/index.html",(req,res)=>{
+    const frontEndFile = path.join(__dirname,"..","/blog-html-css/admin/topics/index.html");
+	return res.status(200).sendFile(frontEndFile);
+})
+
+app.get("/blog-html-css/admin/topics/create.html",(req,res)=>{
+    const frontEndFile = path.join(__dirname,"..","/blog-html-css/admin/topics/create.html");
+	return res.status(200).sendFile(frontEndFile);
+})
+
+app.get("/blog-html-css/login.html",(req,res)=>{
+    const frontEndFile = path.join(__dirname,"..","/blog-html-css/login.html");
+	return res.status(200).sendFile(frontEndFile);
+})
+
+app.get("/blog-html-css/register.html",(req,res)=>{
+    const frontEndFile = path.join(__dirname,"..","/blog-html-css/register.html");
+	return res.status(200).sendFile(frontEndFile);
+})
+
+
+app.post("/blog-html-css/landing.html",(req,res)=>{
+    const frontEndFile = path.join(__dirname,"..","/blog-html-css/landing.html");
 	return res.status(200).sendFile(frontEndFile);
 })
 
