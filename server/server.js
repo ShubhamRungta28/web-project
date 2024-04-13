@@ -32,6 +32,11 @@ app.get("/register.html",(req,res)=>{
 	return res.status(200).sendFile(frontEndFile);
 })
 
+app.get("/about.html",(req,res)=>{
+    const frontEndFile = path.join(__dirname,"..","/blog-html-css/about.html");
+	return res.status(200).sendFile(frontEndFile);
+})
+
 app.get("/blog-html-css/admin/posts/index.html",(req,res)=>{
     const frontEndFile = path.join(__dirname,"..","/blog-html-css/admin/posts/index.html");
 	return res.status(200).sendFile(frontEndFile);
