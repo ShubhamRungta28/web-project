@@ -22,6 +22,11 @@ app.post("/landing.html",(req,res)=>{
 	return res.status(200).sendFile(frontEndFile);
 })
 
+app.get("/landing.html",(req,res)=>{
+    const frontEndFile = path.join(__dirname,"..","/blog-html-css/landing.html");
+	return res.status(200).sendFile(frontEndFile);
+})
+
 app.get("/login.html",(req,res)=>{
     const frontEndFile = path.join(__dirname,"..","/blog-html-css/login.html");
 	return res.status(200).sendFile(frontEndFile);
@@ -57,12 +62,22 @@ app.get("/blog-html-css/admin/users/create.html",(req,res)=>{
 	return res.status(200).sendFile(frontEndFile);
 })
 
+app.post("/blog-html-css/admin/users/create.html",(req,res)=>{
+    const frontEndFile = path.join(__dirname,"..","/blog-html-css/admin/users/create.html");
+	return res.status(200).sendFile(frontEndFile);
+})
+
 app.get("/blog-html-css/admin/topics/index.html",(req,res)=>{
     const frontEndFile = path.join(__dirname,"..","/blog-html-css/admin/topics/index.html");
 	return res.status(200).sendFile(frontEndFile);
 })
 
 app.get("/blog-html-css/admin/topics/create.html",(req,res)=>{
+    const frontEndFile = path.join(__dirname,"..","/blog-html-css/admin/topics/create.html");
+	return res.status(200).sendFile(frontEndFile);
+})
+
+app.post("/blog-html-css/admin/topics/create.html",(req,res)=>{
     const frontEndFile = path.join(__dirname,"..","/blog-html-css/admin/topics/create.html");
 	return res.status(200).sendFile(frontEndFile);
 })
@@ -82,6 +97,12 @@ app.post("/blog-html-css/landing.html",(req,res)=>{
     const frontEndFile = path.join(__dirname,"..","/blog-html-css/landing.html");
 	return res.status(200).sendFile(frontEndFile);
 })
+
+app.get("/blog-html-css/landing.html",(req,res)=>{
+    const frontEndFile = path.join(__dirname,"..","/blog-html-css/landing.html");
+	return res.status(200).sendFile(frontEndFile);
+})
+
 
 
 app.get("/single.html",(req,res)=>{
